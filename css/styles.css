@@ -1,0 +1,55 @@
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header, footer {
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 { margin: 0; }
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+.stats { display: flex; gap: 15px; margin-bottom: 20px; }
+
+.stat-card, .inventory {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.stat-card { flex: 1; }
+.stat-card p { font-size: 22px; font-weight: bold; }
+
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th { background: #f1f5f9; }
+tr:hover { background: #f8fafc; }
+
+.reorder-yes { color: #dc2626; }
+.reorder-no { color: #16a34a; }
+
+@media (max-width: 600px) {
+    .stats { flex-direction: column; }
+}
